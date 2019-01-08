@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sign_in_bg"
+    tools:context="planet.it.limited.pepsigosmart.activities.SelectPuposeAct">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_banner_send_third"
+            >
+
+            <ImageView
+                android:id="@+id/imgv_user"
+                android:layout_width="90dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                app:srcCompat="@drawable/ic_user"
+
+                />
+            <TextView
+                android:id="@+id/txv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Name"
+                android:layout_toRightOf="@+id/imgv_user"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="18dp"
+                android:textColor="#fff"
+                />
+            <TextView
+                android:id="@+id/txv_user_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="017XXXXXXXX"
+                android:layout_toRightOf="@+id/imgv_user"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="45dp"
+                android:textColor="#fff"
+                />
+
+
+
+
+            <ImageView
+                android:id="@+id/imgv_logout"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/ic_logout"
+
+                />
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/lin_sel_pur"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="60dp"
+                android:gravity="center"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/sum_hang_title"
+                >
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="7UP Summer Hangama-2019 "-->
+                    <!--android:textColor="#fff"-->
+                    <!--android:textSize="18dp"-->
+                    <!--android:layout_gravity="center"-->
+
+                    <!--/>-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="40dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/childView_summer_hangama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="03dp"
+                    android:layout_marginTop="0dp"
+                    android:visibility="visible"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                         <ImageButton
+                             android:id="@+id/imgbtn_summer_enrollment"
+                             android:layout_width="270dp"
+                             android:layout_height="50dp"
+                             android:background="@drawable/ic_enrollment_bg"
+                             android:layout_gravity="center"
+                             />
+
+
+                        <ImageButton
+                            android:id="@+id/imgbtn_summer_audit"
+                            android:layout_width="270dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/ic_audit_bg"
+                            android:layout_gravity="center"
+                            />
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lin_main"
+            android:visibility="visible"
+            android:layout_marginTop="140dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/btn_back"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Back"
+                    android:textAllCaps="false"
+                    android:textSize="18dp"
+                    android:background="@drawable/ic_back_btn"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

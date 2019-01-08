@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signin_gradiant_bg"
+    tools:context="planet.it.limited.pepsigosmart.activities.AllExistingDataShowAct">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_existing_data"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#01A54F"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                >
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All Exist Data"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                />
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/toolbar"
+        android:visibility="visible"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Date From"-->
+            <!--/>-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <EditText
+                    android:id="@+id/edt_date_first"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#fff"
+                    android:backgroundTint="#fff"
+                    />
+                <ImageView
+                    android:id="@+id/btn_date_first"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="05dp"
+                    app:srcCompat="@drawable/ic_date"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="0dp"
+                >
+                <EditText
+                    android:id="@+id/edt_date_last"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:textColor="#fff"
+                    android:backgroundTint="#fff"
+                    />
+                <ImageView
+                    android:id="@+id/btn_date_last"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="05dp"
+                    app:srcCompat="@drawable/ic_date"
+
+                    />
+                <!--android:background="@drawable/ic_date"-->
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+                <Button
+                    android:id="@+id/btn_search"
+                    android:background="#01A54F"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="06dp"
+                    android:text="Search"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:textSize="14sp"
+                    android:textColor="#fff"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="0dp"
+        android:layout_below="@+id/rl_date"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            >
+            <ImageButton
+                android:id="@+id/btn_navigation_back"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/ic_navigation_back"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/txv_total_duration_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#fff"
+                />
+            <TextView
+                android:id="@+id/txv_total_duration_last"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- 0"
+                android:textSize="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#fff"
+                />
+            <TextView
+                android:id="@+id/txv_no_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="of Total"
+                android:textSize="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#fff"
+                />
+            <ImageButton
+                android:id="@+id/btn_navigation_right"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/ic_navigation_right"
+                android:layout_marginRight="10dp"
+                />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+    <TableLayout
+        android:id="@+id/table_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_total"
+
+        />
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="5dp"
+
+        >
+
+
+        <HorizontalScrollView
+            android:id="@+id/tabscrvie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            >
+            <TableLayout
+                android:id="@+id/tbl_layout_all_existing_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+            </TableLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sign_in_bg"
+    tools:context="planet.it.limited.pepsigosmart.activities.SelectPuposeAct">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/ic_banner"
+            >
+
+            <ImageView
+                android:id="@+id/drawer_menuIcon"
+                android:src="@drawable/ic_menu"
+                android:clickable="true"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="02dp"
+                android:layout_marginTop="0dp"
+                />
+
+            <TextView
+                android:id="@+id/txv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_marginRight="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="24dp"
+                android:textColor="#fff"
+                />
+            <TextView
+                android:id="@+id/txv_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="01XXXXXXXXX"
+                android:layout_below="@+id/imgv_user"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#fff"
+
+                />
+
+            <!--<ImageView-->
+            <!--android:id="@+id/imgv_logout"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/ic_logout"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_marginTop="23dp"-->
+
+            <!--/>-->
+
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/lin_cool_status"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/round_linear_cooler"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/rl_toolbar"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cooler Status"
+                android:textSize="22sp"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_cooler_status_view"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_linear_cooler"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/lin_cool_status"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            >
+
+            <CheckBox
+                android:id="@+id/chkb_cool_pepsico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PepsiCo"
+                android:layout_marginLeft="10dp"
+                android:textSize="15dp"
+                />
+
+            <CheckBox
+                android:id="@+id/chkb_cool_cocacola"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CocaCola"
+                android:layout_marginLeft="10dp"
+                android:textSize="15dp"
+                />
+
+            <CheckBox
+                android:id="@+id/chkb_cool_pran"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pran"
+                android:layout_marginLeft="10dp"
+                android:textSize="15dp"
+                />
+
+            <CheckBox
+                android:id="@+id/chkb_cool_mojo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mojo"
+                android:layout_marginLeft="10dp"
+                android:textSize="15dp"
+                />
+
+
+            <CheckBox
+                android:id="@+id/chkb_cool_others"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Others"
+                android:layout_marginLeft="10dp"
+                android:textSize="15dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lin_cool_brand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/lin_cooler_status_view"
+            >
+            <RelativeLayout
+                android:id="@+id/exp_btn_cooler_branding"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/round_linear_cooler"
+                >
+                <TextView
+                    android:id="@+id/exp_txv_cooler_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cooler Branding"
+                    android:layout_gravity="center"
+                    android:textColor="#000"
+                    android:layout_marginTop="05dp"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    />
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/childview_cooler_brand"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_linear_cooler"
+                android:orientation="horizontal"
+                android:layout_marginLeft="03dp"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <RadioGroup
+                        android:id="@+id/rg_cool_brand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        >
+
+                        <RadioButton
+                            android:id="@+id/rbtn_coolb_yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Yes" />
+
+                        <RadioButton
+                            android:id="@+id/rbtn_coolb_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="No" />
+
+
+                        <RadioButton
+                            android:id="@+id/rbtn_coolb_already_done"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Already Done" />
+
+                    </RadioGroup>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lin_signage_status"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/round_linear_cooler"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Signage Status"
+                    android:textSize="22sp"
+                    android:layout_gravity="center"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_signage_status_view"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_linear_cooler"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_below="@+id/lin_cool_status"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                >
+
+                <CheckBox
+                    android:id="@+id/ckhb_sig_pepsico"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PepsiCo"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15dp"
+                    />
+
+                <CheckBox
+                    android:id="@+id/ckhb_sig_cocacola"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CocaCola"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15dp"
+                    />
+
+                <CheckBox
+                    android:id="@+id/ckhb_sig_other_bevarage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other Beverage"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15dp"
+                    />
+
+
+
+
+                <CheckBox
+                    android:id="@+id/ckhb_sig_others_signage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Others"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15dp"
+                    />
+            </LinearLayout>
+
+
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/exp_btn_signage_branding"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/round_linear_cooler"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Signage Branding"
+                    android:layout_gravity="center"
+                    android:textColor="#000"
+                    android:layout_marginTop="05dp"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    />
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/childview_signage"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_linear_cooler"
+                android:orientation="horizontal"
+                android:layout_marginLeft="03dp"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <RadioGroup
+                        android:id="@+id/rg_signage_brand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="10dp"
+                        >
+
+                        <RadioButton
+                            android:id="@+id/rbtn_sig_brand_yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Yes" />
+
+                        <RadioButton
+                            android:id="@+id/rbtn_sig_brand_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="No" />
+
+
+                        <RadioButton
+                            android:id="@+id/rbtn_sig_brand_already_done"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Already Done" />
+
+                    </RadioGroup>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lin_cool_brand"
+            android:visibility="visible"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentBottom="true"
+            android:background="#000"
+            >
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:textSize="18dp"
+                android:layout_marginTop="05dp"
+                android:background="@drawable/ic_back"
+                android:textAllCaps="false"
+                android:layout_marginRight="0dp"
+                android:layout_marginLeft="20dp"
+
+                />
+
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:textSize="18dp"
+                android:layout_marginTop="05dp"
+
+                android:text="Update"
+                android:textAllCaps="false"
+                android:layout_marginRight="0dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#FF0000"
+                android:visibility="gone"
+                />
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="29dp"
+                android:layout_marginRight="29dp"
+                android:background="@drawable/ic_next_btn"
+                android:textAllCaps="false"
+                android:textColor="#FF0000"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
