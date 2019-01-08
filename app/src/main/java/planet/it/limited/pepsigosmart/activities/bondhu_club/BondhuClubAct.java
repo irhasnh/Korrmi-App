@@ -27,8 +27,8 @@ public class BondhuClubAct extends AppCompatActivity {
     @BindView(R.id.imgbtn_bondhu_enrollment)
     ImageButton btnBondhuEnroll;
 
-    @BindView(R.id.imgbtn_bondhu_audit)
-    ImageButton btnBondhuAudit;
+//    @BindView(R.id.imgbtn_bondhu_audit)
+//    ImageButton btnBondhuAudit;
 
     @BindView(R.id.imgv_logout)
     ImageView btnLogOut;

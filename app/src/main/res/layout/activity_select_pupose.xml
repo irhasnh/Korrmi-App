@@ -97,58 +97,58 @@
             </LinearLayout>
 
 
-            <RelativeLayout
-                android:id="@+id/lin_market_visit"
-                android:layout_width="250dp"
-                android:layout_height="40dp"
-                android:layout_below="@+id/lin_sel_pur"
-                android:layout_marginLeft="55dp"
-                android:layout_marginRight="30dp"
-                android:layout_marginTop="40dp"
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/lin_market_visit"-->
+                <!--android:layout_width="250dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_below="@+id/lin_sel_pur"-->
+                <!--android:layout_marginLeft="55dp"-->
+                <!--android:layout_marginRight="30dp"-->
+                <!--android:layout_marginTop="40dp"-->
 
-                android:background="@drawable/ic_market_visit">
+                <!--android:background="@drawable/ic_market_visit">-->
 
-                <TextView
-                    android:id="@+id/txv_market_visit"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:text="Market Visit"
-                    android:textColor="#fff"
-                    android:textSize="23sp"
-                    android:textStyle="bold"
-                    android:layout_marginTop="03dp"
-                    />
+                <!--<TextView-->
+                    <!--android:id="@+id/txv_market_visit"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="15dp"-->
+                    <!--android:text="Market Visit"-->
+                    <!--android:textColor="#fff"-->
+                    <!--android:textSize="23sp"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:layout_marginTop="03dp"-->
+                    <!--/>-->
 
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center">
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center">-->
 
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_alignParentRight="true"
-                        android:layout_marginRight="0dp"
-                        app:srcCompat="@drawable/ic_arrow_right"
+                    <!--<ImageView-->
+                        <!--android:layout_width="50dp"-->
+                        <!--android:layout_height="50dp"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_marginRight="0dp"-->
+                        <!--app:srcCompat="@drawable/ic_arrow_right"-->
 
-                        />
-
-
-                </RelativeLayout>
+                        <!--/>-->
 
 
-            </RelativeLayout>
+                <!--</RelativeLayout>-->
+
+
+            <!--</RelativeLayout>-->
 
 
             <RelativeLayout
                 android:id="@+id/lin_retail_initiative"
                 android:layout_width="250dp"
                 android:layout_height="40dp"
-                android:layout_below="@+id/lin_market_visit"
+                android:layout_below="@+id/lin_sel_pur"
                 android:layout_marginLeft="55dp"
                 android:layout_marginRight="30dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="80dp"
 
                 android:background="@drawable/ic_market_visit">
 

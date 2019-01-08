@@ -25,8 +25,8 @@ public class SelectPuposeAct extends AppCompatActivity {
     RelativeLayout btnRetailIni;
     @BindView(R.id.txv_user_name)
     TextView txvUserName;
-    @BindView(R.id.txv_market_visit)
-    TextView txvMarketVisit;
+//    @BindView(R.id.txv_market_visit)
+//    TextView txvMarketVisit;
 
     @BindView(R.id.txv_retail_init)
     TextView txvRetInit;
@@ -64,7 +64,7 @@ public class SelectPuposeAct extends AppCompatActivity {
             txvUserMobile.setText(userMobile);
         }
 
-        txvMarketVisit.setTypeface(fontCustomization.getLucidaCalligraphy());
+       // txvMarketVisit.setTypeface(fontCustomization.getLucidaCalligraphy());
         txvRetInit.setTypeface(fontCustomization.getLucidaCalligraphy());
 
         btnRetailIni.setOnClickListener(new View.OnClickListener() {
